@@ -24,7 +24,7 @@ services:
     ports:
       - 8800:8800
     networks:
-      - marble-arch
+      - oshabz-marketplace
     depends_on:
       - mongo
   mongo:
