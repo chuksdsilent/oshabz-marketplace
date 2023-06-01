@@ -12,6 +12,6 @@ RUN npm install --only=production
 #copying the source code of Application into the container dir
 COPY . /usr/src/app
 #container exposed network port number
-EXPOSE 7500
+EXPOSE 8800
 #command to run within the container
 CMD ["node", "index.js"]
