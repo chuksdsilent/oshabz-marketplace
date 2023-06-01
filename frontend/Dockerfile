@@ -12,7 +12,7 @@ COPY public/ public
 COPY src/ src
 
 # Install dependencies (npm ci makes sure the exact versions in the lockfile gets installed)
-RUN npm ci
+RUN yarn
 
 # Expose react to port 3000
 # EXPOSE 3000
