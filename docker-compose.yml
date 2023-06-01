@@ -28,7 +28,7 @@ services:
   backend:
     container_name: backend
     image: backend
-    build: ./server
+    build: ./backend
     ports:
       - 7500:7500
     networks:
