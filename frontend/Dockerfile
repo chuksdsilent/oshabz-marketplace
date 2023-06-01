@@ -4,7 +4,6 @@ FROM node:16-alpine3.17 AS builder
 WORKDIR /app
 
 COPY package.json package.json
-COPY package-lock.json package-lock.json
 
 # Copy app files
 
