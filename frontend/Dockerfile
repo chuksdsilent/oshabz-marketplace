@@ -27,7 +27,7 @@ RUN yarn
 
 
 # Build the app
- RUN vite build
+ RUN npm run build
 
 # Bundle static assets with nginx
  FROM nginx:1.23.4-alpine as production
