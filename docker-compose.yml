@@ -10,19 +10,11 @@ services:
     stdin_open: true
     tty: true
     ports:
-      - 3000:80
+      - 5173:80
     networks:
       - marble-arch
     environment:
-      - REACT_APP_DEV_BASE_URL=http://backend:7500/api/
-    deploy:
-      replicas: 1
-      resources:
-        limits:
-          cpus: "0.1"
-          memory: 50M
-      restart_policy:
-        condition: on-failure
+      - REACT_APP_DEV_BASE_URL=http://backend:5173/api/
     depends_on:
       - backend
   backend:
@@ -30,7 +22,7 @@ services:
     image: backend
     build: ./backend
     ports:
-      - 7500:7500
+      - 8800:8800
     networks:
       - marble-arch
     depends_on:
