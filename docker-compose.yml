@@ -12,7 +12,7 @@ services:
     ports:
       - 5173:80
     networks:
-      - marble-arch
+      - oshabz-marketplace
     environment:
       - REACT_APP_DEV_BASE_URL=http://backend:5173/api/
     depends_on:
@@ -46,7 +46,7 @@ services:
       - ME_CONFIG_MONGODB_ADMINPASSWORD=password
       - ME_CONFIG_MONGODB_SERVER=mongo
     networks:
-      - marble-arch
+      - oshabz-marketplace
     depends_on:
       - mongo
     volumes:
